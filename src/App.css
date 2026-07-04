@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-section input{
+    flex:1;
+    padding:12px;
+    font-size:16px;
+}
+
+.input-section button{
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.search-filter{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.search-filter input,
+.search-filter select{
+    flex:1;
+    padding:10px;
+}
+
+.task-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.buttons{
+    display:flex;
+    gap:8px;
+}
+
+.buttons button{
+    padding:8px 14px;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.buttons button:nth-child(1){
+    background:#facc15;
+}
+
+.buttons button:nth-child(2){
+    background:#ef4444;
+    color:white;
+}
+
+.buttons button:nth-child(3){
+    background:#22c55e;
+    color:white;
+}
+
+.summary{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-around;
+    background:#2563eb;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.input-section,
+.search-filter,
+.task-card,
+.summary{
+    flex-direction:column;
+}
+
+.buttons{
+    margin-top:10px;
+}
+
+} 
